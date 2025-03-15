@@ -8,23 +8,23 @@ title = "Causality __ Judea Pearl 2009"
 
 [output.html]
 mathjax-support = true
-additional-css = ["./mdbook-admonish.css", "theme/pagetoc.css"]
-additional-js = ["theme/pagetoc.js"]
+additional-css = ["./mdbook-admonish.css"]
+#  , "theme/pagetoc.css"]
+# additional-js = ["theme/pagetoc.js"]
 
 [preprocessor]
 
-[preprocessor.theme]
-pagetoc = true
-sidebar-width             = "240px"
-content-max-width         = "75%"
-content-main-margin-left  = "5%"
-content-main-margin-right = "5%"
-root-font-size            = "80%"
-sidebar-font-size         = "0.85em"
+# [preprocessor.theme]
+# pagetoc = true
+# sidebar-width             = "240px"
+# content-max-width         = "75%"
+# content-main-margin-left  = "5%"
+# content-main-margin-right = "5%"
+# root-font-size            = "80%"
+# sidebar-font-size         = "0.85em"
 
 
 [preprocessor.admonish]
-before = ["theme"]
 command = "mdbook-admonish"
 assets_version = "3.0.3" # do not edit: managed by `mdbook-admonish install`
 

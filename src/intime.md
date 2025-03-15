@@ -16,3 +16,4 @@ LLM使得翻译外文材料变得很轻易
 方便学习和使用
 ```
 
+手绘画图使用Excalidraw [https://excalidraw.com/](https://excalidraw.com/)  

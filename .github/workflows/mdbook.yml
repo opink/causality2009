@@ -31,7 +31,7 @@ jobs:
     env:
       MDBOOK_VERSION: 0.4.47
       MDBOOK_ADMONISH_VERSION: "1.19.0" # Specify the version of mdbook-admonish
-      MDBOOK_THEME_VERSION: "0.1.6"
+      # MDBOOK_THEME_VERSION: "0.1.6" # 不好用，暂时不用
     steps:
       - uses: actions/checkout@v4
       - name: Install mdBook
@@ -43,9 +43,9 @@ jobs:
         run: |
           cargo install mdbook-admonish --version ${MDBOOK_ADMONISH_VERSION}
           mdbook-admonish install ./ # This installs the required assets for admonish
-      - name: Install mdbook-theme
-        run: |
-          cargo install mdbook-theme --version ${MDBOOK_THEME_VERSION}
+      # - name: Install mdbook-theme
+      #   run: |
+      #     cargo install mdbook-theme --version ${MDBOOK_THEME_VERSION}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
