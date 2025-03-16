@@ -1,7 +1,7 @@
 # Chapter 3.2 马尔科夫模型中的干预
 ## 3.2.1 作为干预模型的图
 &emsp;&emsp;换句话说，有向无环图G中的每组父子节点代表了一个确定函数  
-```admonish cite
+```admonish note 
 式<span id="form3.2">(3.2)</span>
 \\[ x_i = f_i(pa_i, \varepsilon_i) , i=1,...,n\\]   
 
