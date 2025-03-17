@@ -6,7 +6,7 @@
 这里我们不走官网提供的流程，因为它会涉及到本地与远端的不同处理。  
 我的方案能够保证开箱即用，本地和远程都 work well :))
 ```admonish cite
-rustup version 1.85.0  
+rustc version 1.85.0  
 mdbook version 0.4.47  
 mdbook-admonish version 1.19.0  
 ~~mdbook-theme version 0.1.6~~  侧边栏导航不好看也不好用，不带这个插件了
