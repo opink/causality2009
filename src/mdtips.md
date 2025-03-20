@@ -3,6 +3,16 @@
 
 ## 1. 文本快速时空关联/回忆追踪
 
+```admonish note
+人的短时记忆的上下文是很有限的，观察你的注意力，在阅读的档口只要眼睛碰到了手机，拿起来刷了两下手机，之前要做什么就忘得一干二净了。  
+因此在阅读时需要就近地、快速建立关联，以支持人能step further : 通过在md文档中使用锚点，通过链接引入了局部性，一口气读完。
+
+```
+
+链接 : [ELF文件用指针组织的节省内存的数据结构，但并不是人类友好的，人类更喜欢平坦或局部性的材料👇check](https://www.bilibili.com/video/BV1V3XKYLE7d/?share_source=copy_web&vd_source=11141d7b83e628e7a2f8baf703e55130)
+![10 - 可执行文件；静态链接和加载 [2025 南京大学操作系统原理]](./img/ELF.jpg)
+
+
 ### 1.1 md文件页内与页间跳转
 [链接 : https://www.cnblogs.com/moyutime/p/14300484.html#fnref1](https://www.cnblogs.com/moyutime/p/14300484.html#fnref1)
 
@@ -68,10 +78,20 @@ or
 
 ```
 \\[公式\\]   //行间公式,居中
-or
-\\begin{equation}公式\\end{equation}  //块级公式
-or
-\\(公式\\)   //行内公式
+
+or  //行内公式
+
+\\(公式\\)   
+
+or  //块级公式
+
+$$
+\begin{aligned}
+P(y|\hat{x},\hat{z_2}) &= \sum_{z_1} P(y|z_1, \hat{x}, \hat{z_2}) * P(z_1|\hat{x},\hat{z_2})  \\\\
+                       &= \sum_{z_1} P(y|z_1, x, z_2) * P(z_1|x)   \\\\
+\end{aligned}
+\tag{3.47}
+$$
 
 ```
 
