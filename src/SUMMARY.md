@@ -9,8 +9,8 @@
   
 ***
 # 互联网冲浪落水拯救指南
-
-- [MDBook的数学笔记的使用小tips](./mdtips.md)
+- [Show me a rich donkey](./richdonkey.md)
+  - [MDBook的数学笔记的使用小tips](./mdtips.md)
 ***
 
 [关于](./about.md)
