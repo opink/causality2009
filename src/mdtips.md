@@ -10,7 +10,7 @@
 ```
 
 链接 : [ELF文件用指针组织的节省内存的数据结构，但并不是人类友好的，人类更喜欢平坦或局部性的材料👇check](https://www.bilibili.com/video/BV1V3XKYLE7d/?share_source=copy_web&vd_source=11141d7b83e628e7a2f8baf703e55130)
-![10 - 可执行文件；静态链接和加载 [2025 南京大学操作系统原理]](./img/ELF.jpg)
+![10 - 可执行文件；静态链接和加载 [2025 南京大学操作系统原理]](./img/ELF.png)
 
 
 ### 1.1 md文件页内与页间跳转
@@ -98,6 +98,8 @@ $$
 > LaTeX公式语法速查: [https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf)  
 
 > LaTeX如何打出字母上下标: [https://blog.csdn.net/Albert_Bolt/article/details/86933173](https://blog.csdn.net/Albert_Bolt/article/details/86933173)
+
+![mdbook-mathjax.png](./img/mdbook-mathjax.png)
 
 ## 4. mdbook-admonish美化hints警告框插件[(使用文档)](https://tommilligan.github.io/mdbook-admonish/reference.html#booktoml-configuration)
 
