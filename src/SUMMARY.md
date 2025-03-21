@@ -11,6 +11,7 @@
 # 互联网冲浪落水拯救指南
 - [Show me a rich donkey lol](./richdonkey.md)
   - [MDBook的数学笔记的使用小tips](./mdtips.md)
+  - [服务器shell使用小tips](./shelltips.md)
 ***
 
 [关于](./about.md)
