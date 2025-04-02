@@ -72,8 +72,9 @@ $ sudo systemctl reload ssh
 
 ```bash
 $ tmux new -s <session-name> # 新建会话
-$ tmux detach # 分离会话（并未结束）（⌃B d）
-$ exit # 结束会话（⌃D）
+
+$ tmux detach # 分离会话（并未结束）（ctrl+b d）
+$ exit # 结束会话（ctrl+d）
 
 $ tmux ls # 查看当前所有的会话
 $ tmux attach -t <session-name> # 接入会话

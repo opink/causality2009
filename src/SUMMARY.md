@@ -6,7 +6,7 @@
   - [Chapter 3.2 马尔科夫模型中的干预](./chapter_3_2.md)
   - [Chapter 3.4 干预的计算](./chapter_3_4.md)
   - [Chapter 3.5 可识别性的图模型检验](./chapter_3_5.md)
-  
+  - [Chapter 4.1 行动、计划和直接效应(简介)](./chapter_4_1.md) 
 ***
 # 互联网冲浪落水拯救指南
 - [Show me a rich donkey lol](./surf_richdonkey.md)

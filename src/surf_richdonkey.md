@@ -17,7 +17,7 @@
 
 ## 产出如下改善感知( Self-awareness of Improvement )
 
-### 一、 电子化且多终端同步笔记记录
+### 0. 电子化且多终端同步笔记记录
 > GitHub管理以md为基础的mdbook电子书项目  
 > 使用mathjax插件写公式、exciladraw手绘示意图
 
@@ -39,17 +39,17 @@ git merge
 git pull
 ```
 
-### 二、 搜索整理的电子笔记
+### 1. 搜索整理的电子笔记
 > Powershell安装ripgrep文本搜索工具
 
-#### 1. 设置PowerShell的输出编码为UTF-8
+#### 1.1. 设置PowerShell的输出编码为UTF-8
 
 ```powershell
 $OutputEncoding = [System.Text.Encoding]::UTF8
 chcp 65001  # 将控制台代码页设置为 UTF-8
 ```
 
-#### 2. 配置Vim的编码设置
+#### 1.2. 配置Vim的编码设置
 
 在Pwsh中临时修复:
 ```powershell
@@ -64,3 +64,20 @@ set fileencodings=utf-8
 ```powershell
 rg 定理 | vim -
 ```
+
+### 2. 终端分屏复用
+1. Windows Powershell :
+   - `Shift + Alt` + `+` : 左右横向分屏2个窗口
+   - `Shift + Alt` + `-` : 上下向分屏2个窗口
+   - `Alt` + `方向键` : 切换窗口
+   - `Alt + Shift` + `方向键` : 调整窗口大小
+   - `Ctrl + Shift` + `w` : 关闭当前分屏窗口
+  
+2. Linux Tmux :
+- 默认 `Ctrl + b` 为 `triger`
+   - `triger` + `%` : 左右横向分屏2个窗口
+   - `triger` + `"` : 上下向分屏2个窗口
+   - `triger` + `0`  or  `triger` + `;` or `triger` + `方向键` : 切换窗口
+   - `triger` + `方向键 (三者同时按住)` : 调整窗口大小
+   - `triger` + `x` : 关闭当前分屏窗口(最后按y确认)
+   - `triger` + `d` : 退出Tmux会话(等同于`$ tmux detach`)
