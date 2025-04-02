@@ -18,3 +18,12 @@
 - rustup tool chains: [https://mirrors.ustc.edu.cn/help/rust-static.html](https://mirrors.ustc.edu.cn/help/rust-static.html)
 - cargo crates: [https://mirrors.ustc.edu.cn/help/crates.io-index.html](https://mirrors.ustc.edu.cn/help/crates.io-index.html)
 
+## 2. Shell Proxy 
+- Pwsh
+  ```pwsh
+  $env:ALL_PROXY="http://127.0.0.1:16888"
+  ```
+- bash
+  ```bash
+  export ALL_PROXY="http://127.0.0.1:16888"
+  ```
