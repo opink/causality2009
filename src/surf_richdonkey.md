@@ -66,18 +66,50 @@ rg 定理 | vim -
 ```
 
 ### 2. 终端分屏复用
-1. Windows Powershell :
+#### 2.1. Windows Powershell :
    - `Shift + Alt` + `+` : 左右横向分屏2个窗口
    - `Shift + Alt` + `-` : 上下向分屏2个窗口
    - `Alt` + `方向键` : 切换窗口
    - `Alt + Shift` + `方向键` : 调整窗口大小
    - `Ctrl + Shift` + `w` : 关闭当前分屏窗口
   
-2. Linux Tmux :
+#### 2.2. Linux Tmux :
 - 默认 `Ctrl + b` 为 `triger`
-   - `triger` + `%` : 左右横向分屏2个窗口
-   - `triger` + `"` : 上下向分屏2个窗口
-   - `triger` + `0`  or  `triger` + `;` or `triger` + `方向键` : 切换窗口
-   - `triger` + `方向键 (三者同时按住)` : 调整窗口大小
-   - `triger` + `x` : 关闭当前分屏窗口(最后按y确认)
-   - `triger` + `d` : 退出Tmux会话(等同于`$ tmux detach`)
+- `Ctrl + b` + `?` : 显示所有快捷键帮助
+
+#### Level1 会话(Session)操作
+  - 新建会话 : `$ tmux new -s <session_name>`
+  - 分离会话回到原shell : `Ctrl + b` + `d` (等同于`$ tmux detach`)
+  - Tui模式列出所有会话level并可切换, q退出 : `Ctrl + b` + `s`
+  - 切换会话 : `$ tmux switch -t <session_name>`
+  - 从shell中进入会话 : `$ tmux attach -t <session_name>`
+  - 杀死当前窗口(最终会话) : `Ctrl + d` (等同于`$ tmux kill-session -t <session_name>`)
+  - 重命名会话 : `Ctrl +b` + `$` (等同于`$ tmux rename-session -t <old_name> <new_name>`)
+
+#### Level2 窗口(Window)操作
+  - 新建窗口 : `Ctrl + b` + `c`
+  - 切换窗口 : `Ctrl + b` + `n` or `p`
+  - 切换到指定窗口 : `Ctrl + b` + `0`~`9`
+  - 切换窗口(需要输入index) : `Ctrl + b` + `'`
+  - 关闭当前窗口 : `Ctrl + b` + `&`
+  - 重命名窗口 : `Ctrl + b` + `,`
+    
+#### Level3 分面板(Pane)操作
+  - 新建上/下分面板 : `Ctrl + b` + `"`
+  - 新建左/右分面板 : `Ctrl + b` + `%`
+  - 可视切换轮流分面板 : `Ctrl + b` + `o`
+  - 显示分面板的编号来切换分面板 : `Ctrl + b` + `q`
+  - 使用方向键来Jump分面板 : `Ctrl + b` + `方向键`
+  - Tui模式列出所有窗口level并可切换, q退出 : `Ctrl + b` + `w`
+  - 切换分面板布局 : `Ctrl + b` + `space`
+  - 调整分面板大小 : `Ctrl + b + 方向键` 三者同时按
+  - 分面板zoom到满屏/再按缩回 : `Ctrl + b` + `z`
+  - 显示数字时钟, q退出 : `Ctrl + b` + `t`
+  - 杀死当前分面板 : `Ctrl + b` + `x` / 确认 or `Ctrl + d` 直接杀
+
+#### Level4 复制模式(Copy Mode)操作
+- 先进入命令行模式  `Ctrl + b` + `:` 后输入 `setw -g mode-keys vi` 把默认的emacs模式改为vi模式
+  - 进入文本复制模式 : `Ctrl + b` + `[`
+  - 搜索文本 : `/` 后输入搜索内容
+  - 复制模式下复制文本 : 使用vi命令，如 `y` 、`p` 等。
+  - 退出复制模式后, 在需要粘贴的地方按 : `Ctrl + b` + `]`
