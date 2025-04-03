@@ -21,15 +21,17 @@ mdbook-admonish version 1.19.0
 现在CF Pages文档不再声称支持mdBook构建了。  
 不过按本篇直接下载二进制构建的方法，也可以在CF Pages上使用mdBook。
 
-有人对此提出了一个[issue](https://github.com/cloudflare/cloudflare-docs/issues/885)，里面提到可以试试追加环境变量MDBOOK_VERSION。但issue下面也有人表示加了不管用。
+有人对此提出了一个 [issue](https://github.com/cloudflare/cloudflare-docs/issues/885)，里面提到可以试试追加环境变量MDBOOK_VERSION。但issue下面也有人表示加了不管用。
 
 最后的一个workaround是直接把二进制下下来build，真的有用。
 
-将构建命令设为 `curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.47/mdbook-v0.4.47-x86_64-unknown-linux-gnu.tar.gz | tar xvz && ./mdbook build` （这里注意选择合适你的mdbook版本）
-
-输出目录设为book，
-
-于是就可以构建了。
+将构建命令设为 
+```bash
+curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.47/mdbook-v0.4.47-x86_64-unknown-linux-gnu.tar.gz | tar xvz && ./mdbook build
+``` 
+（这里注意选择合适你的mdbook版本, 本文使用的是mdbook-v0.4.47-x86_64）
+  
+输出目录设为book，于是就可以构建了。
 
 ## 2. 开发团队保重自救
 [Predmet Chen's Blog  -  开发团队重保自救](https://predmet.ch/infosec/dev_in_a_hw)
