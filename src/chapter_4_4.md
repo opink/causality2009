@@ -27,7 +27,7 @@ $$
 
 ```
 
-#### &emsp;&emsp;定理4.4.1的证明
+```admonish check title="定理4.4.1的证明"
 &emsp;&emsp;此处给出的证明是基于 *do算子* 的推断规则([定理3.4.1](./chapter_3_4.md#thm3.4.1))，这个规则便于将因果效应公式约简为无hat表达式。
     
 &emsp;&emsp;**步骤1**  对于所有 \\(j≥k\\)，条件 **(4.4)** 蕴含\\(Z_{k} \subseteq N_{j}\\)。因此我们可以得到
@@ -59,8 +59,9 @@ P(y | \hat{x}\_{1}, ..., \hat{x}\_{n}) &= \sum_{z_1} P(y|z_1, \hat{x}\_1, \hat{x
 & * P(z_1) * P(z_2 | z_1, x_1) * \cdots * P(z_n | z_1, x_1, z_2, x_2, ..., z_{n-1}, x_{n-1}) \\\\
 & = \sum_{Z_1,...,Z_n} P(y|z_1, ..., z_n, x_1, ..., x_{n}) \prod_{k=1}^{n} P(z_k | z_1, ..., z_{k-1}, x_1, ..., x_{k-1}) \\\\
 \end{aligned}
+\tag*{$\blacksquare$}
 $$
-
+```
 
 
 ***
