@@ -9,6 +9,7 @@
   - [Chapter 4.1 行动、计划和直接效应(简介)](./chapter_4_1.md) 
   - [Chapter 4.4 动态计划的可识别性](./chapter_4_4.md)
   - [Chapter 7.1 结构模型语义学](./chapter_7_1.md)
+  - [Chapter 7.2 结构模型的应用与解释](./chapter_7_2.md)
   - [Chapter 7.5 结构因果与概率因果](./chapter_7_5.md)
 ***
 # 互联网冲浪落水拯救指南
