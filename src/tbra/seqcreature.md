@@ -109,7 +109,7 @@
 
 > 2025-04-05
 
-## 6. [planning 计划 (贯序决策评估)](./chapter_4_4.md#plan)
+## 6. [planning 计划 (贯序决策评估)](../causality_2009/chapter_4_4.md#plan)
 *"行为像智者，其智长存。" —— Rabbbi Hanina ben Dosa(公元1世纪)*
 
 
@@ -139,7 +139,7 @@
   
 很多其他物种在时间长河中，自然选择中遗留下来的功能也是一样的。
 
-### 6.4. 总结: [\<thinking Path\>](#arrow) 对应于 Search , Search 实质是在做 [planning(贯序决策评估)](./chapter_4_4.md#plan)
+### 6.4. 总结: [\<thinking Path\>](#arrow) 对应于 Search , Search 实质是在做 [planning(贯序决策评估)](../causality_2009/chapter_4_4.md#plan)
 观察上面这3三个例子，他们的内核都是一致的、共通的。  
   
 有需求对应的功能更大可能性在历史经验里关联在一起，增大结果的可能性。  
