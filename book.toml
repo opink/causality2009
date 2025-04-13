@@ -11,6 +11,8 @@ mathjax-support = true
 additional-css = ["./mdbook-admonish.css"]
 #  , "theme/pagetoc.css"]
 # additional-js = ["theme/pagetoc.js"]
+git-repository-url = "https://github.com/opink/causality2009/"
+git-repository-icon = "fa-github"
 
 [preprocessor]
 

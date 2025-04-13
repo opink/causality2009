@@ -19,7 +19,7 @@
   - [The Great Firewall of China 墙](./surf_internet/surf_gfw.md)
   - [python写起来一时爽,重构emmmm...](./surf_internet/surf_write_python.md)
     - [VSCode-with-Vimplugin-tips](./surf_internet/surf_VSCode-with-Vimplugin-tips.md)
-    - 
+  
 ***
 # "稍后再看"不稍后
 - [Sequencial Creature](./tbra/seqcreature.md)
