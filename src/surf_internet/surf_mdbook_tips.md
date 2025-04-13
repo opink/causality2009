@@ -73,6 +73,8 @@ or
 20. 乘号：&#215;
 21. 除号：&#247;
 ```
+![md-cheatsheet](./img/markdown常用语法.jpg)
+
 ## 3. mdbook渲染使用[MathJax插件(使用文档)](https://hellowac.github.io/mdbook-doc-zh/zh-cn/format/mathjax.html)渲染公式，公式的语法如下
 
 

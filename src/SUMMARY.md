@@ -14,10 +14,12 @@
 ***
 # 互联网冲浪落水拯救指南
 - [Show me a rich donkey lol](./surf_internet/richdonkey.md)
-  - [MDBook的数学笔记的使用小tips](./surf_internet/surf_mdtips.md)
+  - [MDBook的数学笔记的使用小tips](./surf_internet/surf_mdbook_tips.md)
   - [服务器shell使用小tips](./surf_internet/surf_shelltips.md)
   - [The Great Firewall of China 墙](./surf_internet/surf_gfw.md)
-
+  - [python写起来一时爽,重构emmmm...](./surf_internet/surf_write_python.md)
+    - [VSCode-with-Vimplugin-tips](./surf_internet/surf_VSCode-with-Vimplugin-tips.md)
+    - 
 ***
 # "稍后再看"不稍后
 - [Sequencial Creature](./tbra/seqcreature.md)
