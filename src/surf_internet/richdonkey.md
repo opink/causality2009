@@ -113,3 +113,17 @@ rg 定理 | vim -
   - 搜索文本 : `/` 后输入搜索内容
   - 复制模式下复制文本 : 使用vi命令，如 `y` 、`p` 等。
   - 退出复制模式后, 在需要粘贴的地方按 : `Ctrl + b` + `]`
+
+### 3. Pro Git Book
+
+#### [撤销操作 https://www.progit.cn/#_undoing](https://www.progit.cn/#_undoing)
+有时候我们提交完了才发现漏掉了几个文件没有添加，或者提交信息写错了。 此时，可以运行带有 --amend 选项的提交命令尝试重新提交：  
+`git commit --amend` : 修改最后一次提交  
+  
+这个命令会将暂存区中的文件提交。 如果自上次提交以来你还未做任何修改（例如，在上次提交后马上执行了此命令），那么快照会保持不变，而你所修改的只是提交信息。
+
+```bash
+$ git commit -m 'initial commit'  
+$ git add forgotten_file  
+$ git commit --amend  
+```
