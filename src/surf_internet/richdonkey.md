@@ -67,9 +67,9 @@ rg 定理 | vim -
 
 ### 2. 终端分屏复用
 #### 2.1. Windows Powershell :
-   - `Shift + Alt` + `+` : 左右横向分屏2个窗口
+   - `Shift + Alt` + `=` : 左右横向分屏2个窗口
    - `Shift + Alt` + `-` : 上下向分屏2个窗口
-   - `Alt` + `方向键` : 切换窗口
+   - `Alt` + `方向键` : 导航窗口
    - `Alt + Shift` + `方向键` : 调整窗口大小
    - `Ctrl + Shift` + `w` : 关闭当前分屏窗口
   
@@ -77,16 +77,16 @@ rg 定理 | vim -
 - 默认 `Ctrl + b` 为 `triger`
 - `Ctrl + b` + `?` : 显示所有快捷键帮助
 
-#### Level1 会话(Session)操作
+#### &emsp;&emsp;Level 1 会话(Session)操作:
   - 新建会话 : `$ tmux new -s <session_name>`
-  - 分离会话回到原shell : `Ctrl + b` + `d` (等同于`$ tmux detach`)
+  - 分离会话, 回到原shell : `Ctrl + b` + `d` (等同于`$ tmux detach`)
   - Tui模式列出所有会话level并可切换, q退出 : `Ctrl + b` + `s`
   - 切换会话 : `$ tmux switch -t <session_name>`
   - 从shell中进入会话 : `$ tmux attach -t <session_name>`
-  - 杀死当前窗口(最终会话) : `Ctrl + d` (等同于`$ tmux kill-session -t <session_name>`)
+  - 杀死当前窗口(最终杀死会话) : `Ctrl + d` (等同于`$ tmux kill-session -t <session_name>`)
   - 重命名会话 : `Ctrl +b` + `$` (等同于`$ tmux rename-session -t <old_name> <new_name>`)
 
-#### Level2 窗口(Window)操作
+#### &emsp;&emsp;Level 2 窗口(Window)操作:
   - 新建窗口 : `Ctrl + b` + `c`
   - 切换窗口 : `Ctrl + b` + `n` or `p`
   - 切换到指定窗口 : `Ctrl + b` + `0`~`9`
@@ -94,12 +94,12 @@ rg 定理 | vim -
   - 关闭当前窗口 : `Ctrl + b` + `&`
   - 重命名窗口 : `Ctrl + b` + `,`
     
-#### Level3 分面板(Pane)操作
+#### &emsp;&emsp;Level 3 分面板(Pane)操作:
   - 新建上/下分面板 : `Ctrl + b` + `"`
   - 新建左/右分面板 : `Ctrl + b` + `%`
   - 可视切换轮流分面板 : `Ctrl + b` + `o`
   - 显示分面板的编号来切换分面板 : `Ctrl + b` + `q`
-  - 使用方向键来Jump分面板 : `Ctrl + b` + `方向键`
+  - 使用方向键来导航到分面板 : `Ctrl + b` + `方向键`
   - Tui模式列出所有窗口level并可切换, q退出 : `Ctrl + b` + `w`
   - 切换分面板布局 : `Ctrl + b` + `space`
   - 调整分面板大小 : `Ctrl + b + 方向键` 三者同时按
@@ -107,7 +107,7 @@ rg 定理 | vim -
   - 显示数字时钟, q退出 : `Ctrl + b` + `t`
   - 杀死当前分面板 : `Ctrl + b` + `x` / 确认 or `Ctrl + d` 直接杀
 
-#### Level4 复制模式(Copy Mode)操作
+#### &emsp;&emsp;其他操作 复制模式(Copy Mode)操作:
 - 先进入命令行模式  `Ctrl + b` + `:` 后输入 `setw -g mode-keys vi` 把默认的emacs模式改为vi模式
   - 进入文本复制模式 : `Ctrl + b` + `[`
   - 搜索文本 : `/` 后输入搜索内容
@@ -116,7 +116,7 @@ rg 定理 | vim -
 
 ### 3. Pro Git Book
 
-#### [撤销操作 https://www.progit.cn/#_undoing](https://www.progit.cn/#_undoing)
+#### 3.1 [撤销操作 https://www.progit.cn/#_undoing](https://www.progit.cn/#_undoing)
 有时候我们提交完了才发现漏掉了几个文件没有添加，或者提交信息写错了。 此时，可以运行带有 --amend 选项的提交命令尝试重新提交：  
 `git commit --amend` : 修改最后一次提交  
   
