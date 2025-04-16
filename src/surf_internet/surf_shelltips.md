@@ -199,7 +199,7 @@ $ sudo -u postgres psql # 进入postgres数据库
 
 $ su opink # 切换到opink用户
 
-# 查看网络监听端口：
+# 查看网络监听端口：(默认在5432端口)
 $ sudo netstat -tulpn | grep postgres
 
 ```
