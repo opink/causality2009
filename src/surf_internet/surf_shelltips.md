@@ -88,7 +88,7 @@ apt是 Linux服务器上的包管理工具(apt, Advanced Packaging Tool, 是 Ubu
 安装一些程序的时候它有相当多的依赖（即这个程序要调用其他的命令行程序），怎么管理这些呢？  
 都用包管理工具就好了。  
 
-- apt常用命令：
+### 2.1 apt常用命令：
   - apt update：更新软件源中的所有软件列表，建议在执行安装或更新操作前，先执行该指令。
   - apt list：列出所有软件包
   - apt list --upgradable：列出所有可供更新的软件包
@@ -99,9 +99,108 @@ apt是 Linux服务器上的包管理工具(apt, Advanced Packaging Tool, 是 Ubu
   - apt search <package_name>：搜索软件包
   - apt show <package_name>：显示软件包的信息
 
-- apt的几个缺省路径：
+### 2.2 apt的几个缺省路径：
   - 下载的软件存放位置：/var/cache/apt/archives
   - 安装后软件默认位置：/usr/share
   - 可执行文件位置：/usr/bin
   - 配置文件位置：/etc
   - 库文件位置：/usr/lib
+
+### 2.3 apt必装软件
+#### 2.3.1 ripgrep
+Blame fast 文本搜索工具，替代`grep`，支持正则表达式，速度快很多。
+```bash
+$ sudo apt install ripgrep
+
+usage:
+
+$ rg -h | rg 'hidden' # 搜索自身的帮助
+$ rg -.w ustc | fzf # 搜索文件名包含ustc的文件并用fzf直观地筛选
+```
+
+### 2.3.2 fdfind
+`find`的替代品
+```bash
+$ sudo apt install fdfind
+```
+
+#### 2.3.3 fzf
+可视化Tui模糊搜索工具，可以外接别的搜索结果
+```bash
+$ sudo apt install fzf
+
+usage:
+
+$ ls | fzf # 用fzf搜索文件
+
+$ Ctrl+c (or Ctrl+d) # 退出搜索
+```
+
+### 2.3.4 nnn
+Tui模式文件管理器,支持鼠标操作
+```bash
+$ sudo apt install nnn
+
+usage:
+
+$ nnn # 打开nnn
+q # 退出
+```
+#### 2.3.5 batcat
+`cat`的替代品，支持语法高亮
+```bash
+$ sudo apt install batcat
+
+usage:
+
+$ batcat README.md # 用batcat查看README.md文件
+```
+
+### 2.3.6 tree
+树状显示目录结构
+```bash
+$ sudo apt install tree
+
+usage:
+
+$ tree -h # 显示帮助
+$ tree -d # 显示目录结构
+$ tree -L 2 # 显示目录结构，只显示两层
+```
+
+### 2.3.7 exa
+更好看的`ls`命令。对于类 UNIX 操作系统的新手来说，`exa`可能是用户友好的，它牺牲了在脚本中容易使用的能力，以换取“易用性”和外观。
+```bash
+$ sudo apt install exa
+
+usage:
+
+$ exa -lh # 列出文件详细信息, 并加个Header
+$ exa -abghHliS # 列出文件详细信息, 并加个Header, 并显示隐藏文件, 并显示文件大小, 并显示文件类型, 并显示文件权限, 并显示文件链接数, 并显示文件inode号
+$ exa -T # 树状显示文件
+```
+
+## 3. PostgreSQL数据库管理
+
+```bash
+$ sudo apt install postgresql # 会自动新建一个postgres用户
+
+usage:
+
+$ sudo -u postgres psql # 进入postgres数据库 
+# 常用命令：
+\l # 列出所有数据库
+\c <database_name> # 切换到指定数据库
+\dt # 列出当前数据库中的所有表
+\d <table_name> # 显示指定表的结构
+\d+ <table_name> # 显示指定表的详细信息
+\du # 列出所有用户
+\q # 退出postgres数据库
+
+$ su opink # 切换到opink用户
+
+# 查看网络监听端口：
+$ sudo netstat -tulpn | grep postgres
+
+```
+
