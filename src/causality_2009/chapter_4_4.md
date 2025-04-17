@@ -59,7 +59,7 @@ P(y | \hat{x}\_{1}, ..., \hat{x}\_{n}) &= \sum_{z_1} P(y|z_1, \hat{x}\_1, \hat{x
 & * P(z_1) * P(z_2 | z_1, x_1) * \cdots * P(z_n | z_1, x_1, z_2, x_2, ..., z_{n-1}, x_{n-1}) \\\\
 & = \sum_{Z_1,...,Z_n} P(y|z_1, ..., z_n, x_1, ..., x_{n}) \prod_{k=1}^{n} P(z_k | z_1, ..., z_{k-1}, x_1, ..., x_{k-1}) \\\\
 \end{aligned}
-\tag*{$\blacksquare$}
+\tag *{$\blacksquare$}
 $$
 ```
 
