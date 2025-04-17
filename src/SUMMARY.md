@@ -11,6 +11,7 @@
   - [Chapter 7.1 结构模型语义学](./causality_2009/chapter_7_1.md)
   - [Chapter 7.2 结构模型的应用与解释](./causality_2009/chapter_7_2.md)
   - [Chapter 7.5 结构因果与概率因果](./causality_2009/chapter_7_5.md)
+
 ***
 # 互联网冲浪落水拯救指南
 - [Show me a rich donkey lol](./surf_internet/richdonkey.md)
@@ -18,11 +19,19 @@
   - [服务器shell使用小tips](./surf_internet/surf_shelltips.md)
   - [The Great Firewall of China 墙](./surf_internet/surf_gfw.md)
   - [python写起来一时爽,重构emmmm...](./surf_internet/surf_write_python.md)
+    - [Rust Notions](./surf_internet/surf_rust_notions.md)
+    - [WSL2中PostgreSQL数据库在Windows主机上的远程访问配置](./surf_internet/surf_WSL2-PostgreSQL-remote-access.md)
+    - [码代码IDE真正需要的功能](./surf_internet/surf_IDE-features.md)
     - [VSCode-with-Vimplugin-tips](./surf_internet/surf_VSCode-with-Vimplugin-tips.md)
+
   
 ***
 # "稍后再看"不稍后
 - [Sequencial Creature](./tbra/seqcreature.md)
+  - [凯利公式的推导](./tbra/tbra_kaili.md)
+  - [What happens when you don't see the light?](./tbra/tbra_lightening.md)
+  - [南京大学2021-数据库开发-网课](./tbra/tbra_nju_dbdev_2021.md)
+
 
 ***
 # RL Zero?
