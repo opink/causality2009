@@ -120,10 +120,11 @@ $$
 
 &emsp;&emsp;**证明：**  
 &emsp;&emsp;对于任意两个事件 A 和 B，我们都有严格的界限
-\\[ max[0,P(A)+P(B)-1] \leqslant P(A,B) \leqslant min[P(A),P(A)]   \tag{9.10} \\] 
+\\[ max[0,P(A)+P(B)-1] \leqslant P(A,B) \leqslant min[P(A),P(B)]   \tag{9.10} \\] 
 &emsp;&emsp;式(9.9)根据式(9.3)和式(9.10)，使用 \\(A=y_x , B=y'\_{x'} , P(y_x)=P(y|x) 和 P(y'\_{x'})=P(y'|x') \\) 得到。\\( \tag *{$\square$} \\)
 
 &emsp;&emsp;显然，如果不能确定外生性，那么 **PNS** 被类似于式(9.9)的一个不等式约束，其中使用 \\( P(y_x) 和 P(y'\_{x'}) 分别替代  P(y|x) 和 P(y'|x') \\) 。
+\\[ max[0,P(y_x)-P(y\_{x'})] \leqslant PNS \leqslant min[P(y_x),P(y'\_{x'})]  \\]
 
 ```
 
@@ -179,11 +180,11 @@ $$
 \\(\tag *{$\square$}\\)
 ```
 
-&emsp;&emsp;式(9.21)的等号右边在流行病学中被称为"风险差"，也被误称为"归因风险(attribution risk)"(Hennekens and Buring, 1987)。  
+&emsp;&emsp;式(9.21)的等号右边在流行病学中被称为"风险差"，也被误称为"归因风险( *attribution risk* )"(Hennekens and Buring, 1987)。  
 
-&emsp;&emsp;从式(9.11)中我们可以看出，必要性概率是可识别的，并由超额风险率(Excess Risk Ratio, ERR)给出：
-\\[ PN = \frac{PNS}{P(y|x)} = \frac{P(y|x) - P(y|x')}{P(y|x)}  \tag{9.22} \\] 
-
+&emsp;&emsp;从式(9.11)中我们可以看出，必要性概率是可识别的，并由超额风险率( *Excess Risk Ratio* , **ERR** )给出：
+\\[ PN = \frac{PNS}{P(y|x)} = \frac{P(y|x) - P(y|x')}{P(y|x)} = ERR = \frac{R_1 - R_0}{R_0} = RR - 1    \tag{9.22} \\] 
+\\[  RR (相对风险：暴露组与非暴露组的 死亡or风险比)  ： \frac{R_1}{R_0} \\]
 &emsp;&emsp;这个概率通常被误称为"归因分数(Schlesselman, 1982)"、"归因率百分比(Hennekens and Buring, 1987)"或"归因比例(Cole, 1997)"。从字面上看，式(9.22)中的比率与归因无关，因为它由统计术语组成，而不是由因果关系或反事实关系组成。然而，外生性和单调性的假设使我们能够将 **PN** 定义中的归因概念(式(9.1))转化为纯统计关联的比率。这表明，许多作者提出或推导式(9.22)作为"归因于暴露因素的暴露疾病比例"的度量都默认了外生性和单调性。  
   
 &emsp;&emsp; **PS** (式(9.12))的表达式同样能够说明问题：
@@ -249,10 +250,12 @@ $$
 
 ### 值得注意的是，由于 **PS** 和 **PN** 必须是非负的，因此式(9.29)和(9.30)为单调性假设提供了一个简单必要的检验：
 \\[ P(y_x) \geq P(y) \geq P(y_{x'})  \tag{9.32} \\]
+&emsp;&emsp;它收紧了标准不等式(从 \\( x' \wedge y \Rightarrow y_{x'} \\) 和 \\( x \wedge y' \Rightarrow y'\_x \\))
+\\[ P(y_{x'}) \geq P(x',y) &emsp; , &emsp; P(y'\_x) \geq P(x,y')  \tag{9.33} \\]
 
-&emsp;&emsp;J.Tian已经证明了事实上这些不等式是严格的：满足这些不等式的试验和非实验数据的每种组合都可以从某些因果模型中产生，其中 *Y* 相对于 *X* 是单调的。"无预防"的一般性假设并不能完全免除实验性的工作，这应该让许多流行病学家感到宽慰。  
+&emsp;&emsp;[J.Tian(Tian and Pearl, 2000)](#TianPearl2000)已经证明了事实上这些不等式是严格的：满足这些不等式的试验和非实验数据的每种组合都可以从某些因果模型中产生，其中 *Y* 相对于 *X* 是单调的。"无预防"的一般性假设并不能完全免除实验性的工作，这应该让许多流行病学家感到宽慰。  
 
-&emsp;&emsp;**换言之，如果"无预防"假设在理论上是不可辩驳的，那么式(9.32)就可以用于测试实验数据和非实验数据的一致性，即临床试验中的受试者是否代表了以联合分布 \\( P(x,y) \\) 刻画的目标人群。**
+&emsp;&emsp;**换言之，<a id = "ref9.2.4">[如果"无预防"假设在理论上是不可辩驳的，那么式(9.32)就可以用于测试实验数据和非实验数据的一致性](./chapter_9_3.md#ref9.3.4)</a>，即临床试验中的受试者是否代表了以联合分布 \\( P(x,y) \\) 刻画的目标人群。**
 ***
 
 <span id="TianPearl2000">**Tian and Pearl 2000,** Probabilities of causation: Bounds and identification. *Annals of Mathematics and Artificial Intelligence*, 28:287-313, 2000.</span>
