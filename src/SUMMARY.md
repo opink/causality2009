@@ -2,7 +2,9 @@
 
 # Causality Judea Pearl 2009
 - [intime 简介](./causality_2009/intime.md)
-  - [Chapter 1.2 图与概率](./causality_2009/chapter_1_2.md)
+  - [Chapter 1 概率、图及因果模型]()
+    - [Chapter 1.2 图与概率](./causality_2009/chapter_1_2.md)
+    - [Chapter 1.4 函数因果模型](./causality_2009/chapter_1_4.md)
   - [Chapter 3 因果图与因果效应识别](./causality_2009/chapter_3.md)
     - [Chapter 3.2 马尔科夫模型中的干预](./causality_2009/chapter_3_2.md)
     - [Chapter 3.4 干预的计算](./causality_2009/chapter_3_4.md)

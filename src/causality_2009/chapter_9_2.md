@@ -185,7 +185,7 @@ $$
 \\(\tag *{$\square$}\\)
 ```
 
-&emsp;&emsp;式(9.21)的等号右边在流行病学中被称为"风险差"(在队列研究中，暴露组与非暴露组的死亡率or风险之差  ： \\(R_1 -R_0 \\))，也被称为"归因风险(**AR** *Attribution Risk* 或超额危险 *Excess Risk*)"(Hennekens and Buring, 1987)。
+&emsp;&emsp;式(9.21)的等号右边在流行病学中被称为"风险差"(在队列研究中，暴露组与非暴露组的死亡率or风险之差  ： \\(R_1 -R_0 \\))，也被误称为"归因风险(**AR** *Attribution Risk* 或超额危险 *Excess Risk*)"(Hennekens and Buring, 1987)。
 
 &emsp;&emsp;从式(9.11)中我们可以看出，必要性概率是可识别的，并由超额风险率( *Excess Risk Ratio* , **ERR** 或归因危险度百分比 **AR%** )给出：
 \\[ PN = \frac{PNS}{P(y|x)} = \frac{P(y|x) - P(y|x')}{P(y|x)} = \frac{R_1 - R_0}{R_1} \tag{9.22} \\] 
