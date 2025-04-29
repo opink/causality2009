@@ -261,4 +261,4 @@ $$
 &emsp;&emsp;**换言之，<a id = "ref9.2.4">[如果"无预防"假设在理论上是不可辩驳的，那么式(9.32)就可以用于测试实验数据和非实验数据的一致性](./chapter_9_3.md#ref9.3.4)</a>，即临床试验中的受试者是否代表了以联合分布 \\( P(x,y) \\) 刻画的目标人群。**
 ***
 
-<span id="TianPearl2000">**Tian and Pearl 2000,** Probabilities of causation: Bounds and identification. *Annals of Mathematics and Artificial Intelligence*, 28:287-313, 2000.</span>
+<span id="TianPearl2000">**Tian and Pearl 2000,** [Probabilities of causation: Bounds and identification.(PDF)](./img/9.2/translate%20Probabilitis%20of%20causation%20Bounds%20and%20identification.pdf) *Annals of Mathematics and Artificial Intelligence*, 28:287-313, 2000.</span>
