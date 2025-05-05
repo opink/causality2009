@@ -77,6 +77,8 @@ or
 
 ## 3. mdbook渲染使用[MathJax插件(使用文档)](https://hellowac.github.io/mdbook-doc-zh/zh-cn/format/mathjax.html)渲染公式，公式的语法如下
 
+> MathJax语法常用总结： [https://www.fmingde.com/2024/08/16/mathjax/](https://www.fmingde.com/2024/08/16/mathjax/)
+
 
 ```
 \\[公式\\]   //行间公式,居中
