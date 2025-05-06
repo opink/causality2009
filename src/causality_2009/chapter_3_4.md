@@ -31,13 +31,13 @@
 - `规则3` 为引入(或删除)外部干预 *do(Z=z)* 而不影响 *Y=y* 的概率提供了条件。同样，该规则的有效性起源于通过删除与 *Z* 中变量相对应的所有方程 (因此得到图 \\(G_{\bar{X} , \overline{Z(W)}}\\))来模拟干预 *do(Z=z)* 。[Pearl(1995a)](#Pearl1995a)提供了规则1~3的证明以及将删除限制在 *W* 的非祖代节点的原因:
 ```admonish check  
 依据为 [*d-分离* 准则的要求: 在有对撞结构时，不可条件到子代。](./chapter_1_2.md#def1.2.3)
-<img style="width:85%; display:block; algined:center; margin:auto;" src="./img/3.4/图3.4.2.jpg" id="fig3.4.2"></img>
+<img style="width:85%; display:block; algined:center; margin:auto;" src="./img/3.4/图3.4.2.jpg" id="fig3.4.2"/>
 ```
 
 ## 3.4.3 因果效应的符号推导:一个实例
 
 &emsp;&emsp;现在，我们来演示如何使用上节`规则1 ~ 3`推导下图 *G* 所示结构中的所有因果效应的估计。图3.6展示了后续推导所需要的子图。
-<img src="./img/3.4/图3.6.jpg" id="fig3.6"></img>
+<img src="./img/3.4/图3.6.jpg" id="fig3.6"/>
 
 ```admonish tip
 优先尝试的顺序：规则2 -> 规则1 -> 规则3  
