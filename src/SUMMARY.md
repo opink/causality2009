@@ -22,6 +22,12 @@
     - [Chapter 9.2 充分必要原因：识别条件](./causality_2009/chapter_9_2.md)
     - [Chapter 9.3 实例与应用](./causality_2009/chapter_9_3.md)
     - [Chapter 9.4 非单调模型的可识别性](./causality_2009/chapter_9_4.md)
+
+***
+# The Book of Why Judea Pearl 2016
+- [简介](./tbw_2016/intro.md)
+  - [Chapter 1 因果关系之梯](./tbw_2016/chapter_1.md)
+  - [Chapter 6 大量的悖论](./tbw_2016/chapter_6.md)
 ***
 # 互联网冲浪落水拯救指南
 - [Show me a rich donkey lol](./surf_internet/richdonkey.md)
