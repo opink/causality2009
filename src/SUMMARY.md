@@ -39,7 +39,7 @@
     - [WSL2中PostgreSQL数据库在Windows主机上的远程访问配置](./surf_internet/surf_WSL2-PostgreSQL-remote-access.md)
     - [码代码IDE真正需要的功能](./surf_internet/surf_IDE-features.md)
     - [VSCode-with-Vimplugin-tips](./surf_internet/surf_VSCode-with-Vimplugin-tips.md)
-
+  - [局域网中的Windows与WSL](./surf_internet/surf_win-wsl-lan.md)
   
 ***
 # "稍后再看"不稍后
