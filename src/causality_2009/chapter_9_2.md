@@ -179,8 +179,8 @@ $$
 \\[ y_x = y_x \wedge (y_{x'} \vee y'\_{x'}) = (y_x \wedge y_{x'}) \vee (y_x \wedge y'\_{x'})  \tag{9.24} \\]
 且，因为单调性 \\( y'\_x \wedge y_{x'} = false \\)(定义9.2.13)，我们有：  
 \\[ y_{x'} = y_{x'} \wedge (y_x \vee y'_x) = (y\_{x'} \wedge y_x) \vee (y\_{x'} \wedge y'_x) \Rightarrow y\_{x'} \wedge y_x   \tag{9.25} \\]
-将式(9.25)带回式(9.24)中，我们得到：  
-\\[ y_x = y\_{x'} \wedge (y_x \vee y'\_{x'})  \tag{9.26} \\]
+将式(9.25)带回式(9.24)中替换，我们得到：  
+\\[ y_x = y\_{x'} \vee (y_x \wedge y'\_{x'})  \tag{9.26} \\]
 上式(9.26)两边取概率，并利用 \\( y\_{x'} 与 y'\_{x'} \\) 的互斥性，我们得到：  
 \\[ P(y_x) = P(y\_{x'}) + P(y_x,y'\_{x'}) \\]
 \\[\Rightarrow P(y_x,y'\_{x'}) = P(y_x) - P(y\_{x'})   \tag{9.27} \\]
