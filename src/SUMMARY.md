@@ -47,6 +47,7 @@
   - [凯利公式的推导](./tbra/tbra_kaili.md)
   - [What happens when you don't see the light?](./tbra/tbra_lightening.md)
   - [南京大学2021-数据库开发-网课](./tbra/tbra_nju_dbdev_2021.md)
+  - [线性规划-方述诚-网课2011](./tbra/linear_programming_2011.md)
 
 
 ***
