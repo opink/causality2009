@@ -4,7 +4,7 @@
 本项目是在阅读《Causality》后，第二遍整理用的学习材料，包括：
     文章翻译    公式推导    要点整理
 
-地址链接：https://opink.github.io/causality2009/
+- [地址链接：https://opink.github.io/causality2009/](https://opink.github.io/causality2009/)
 
 ## 仓库模板
 此仓库包含使用 mdBook 框架创建的书籍项目，演示了如何自动部署书籍到 GitHub Pages。
