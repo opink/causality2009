@@ -1,4 +1,12 @@
-仓库模板
+# Causality 2009 中文翻译及读书笔记
+"Causality: Models, Reasoning, and Inference-Judea Pearl(2009)"中文翻译及读书笔记
+
+本项目是在阅读《Causality》后，第二遍整理用的学习材料，包括：
+    文章翻译    公式推导    要点整理
+
+地址链接：https://opink.github.io/causality2009/
+
+## 仓库模板
 此仓库包含使用 mdBook 框架创建的书籍项目，演示了如何自动部署书籍到 GitHub Pages。
 
 ## 项目概览
