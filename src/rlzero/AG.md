@@ -53,6 +53,7 @@
 
 ***
 
+
 >2025-12-1
 
 ## 在奖励函数不能完全编码意图时，忠实于奖励函数不等同于忠实于意图。我们引入了元验证器M来调整验证器V，从而提高策略的忠实性。
@@ -61,8 +62,13 @@
 
   想不到通过范畴论中的 faithful functor 串起来了。
 
-### deepseek还在做令人激动人心的研究。 
-  12月1日新上的deepseekV3.2 确实强了很多，特别是CoT里面信息的完整度还有最终回答的长度不再那么简洁、跟CoT里内容的一致性也更好。
+### deepseek还在做令人激动人心的研究。
+
+[DeepSeekMath_V2: LLM的"​世界模型"框架诞生了](https://github.com/deepseek-ai/DeepSeek-Math-V2/blob/main/DeepSeekMath_V2.pdf)
+
+
+
+  12月1日新上的deepseekV3.2 使用了MATHv2的训练集，确实强了很多，特别是CoT里面信息的完整度还有最终回答的长度不再那么简洁、跟CoT里内容的一致性也更好。
 
 
 ***
